@@ -4,6 +4,7 @@
 #'
 #' @param type county is default, "place" will return place names
 #' @importFrom shiny selectInput
+#' @export
 
 
 geoInput = function( type="county"){
