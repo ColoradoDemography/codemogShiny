@@ -3,7 +3,7 @@
 #' This function will generate a UI element for shiny that
 #'
 #' @param county
-#' @importFrom plotly renderPlotly
+#' @importFrom plotly plotlyOutput
 #' @export
 #'
 
@@ -11,6 +11,6 @@
 county_componentsUI = function(id){
   ns=NS(id)
   tagList(
-  renderPlotly({ns("components")})
-)
+    plotlyOutput({ns("components_p")})
+  )
 }
