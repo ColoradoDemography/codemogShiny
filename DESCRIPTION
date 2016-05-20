@@ -2,12 +2,12 @@ Package: codemogShiny
 Type: Package
 Title: Shiny Elements and Modules for CO Demography Office
 Version: 0.1.0
-Author: Rob Kemp
-Maintainer: robert.kemp@state.co.us
+Authors@R: person("Rob", "Kemp", email = "robert.kemp@state.co.us",
+                  role = c("aut", "cre"))
 Description: Contains commonly used functions to abstract some of the code we use in shiny
 License: What license is it under?
 Imports:
-    shiny
+    shiny,
     codemogAPI
 LazyData: TRUE
 RoxygenNote: 5.0.1
