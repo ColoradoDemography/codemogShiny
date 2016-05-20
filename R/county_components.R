@@ -9,7 +9,7 @@
 #'
 
 
-county_components = function(input, output, session, fips=0){
+county_components = function(input, output, session, fips=0, name="Colorado"){
 
   data=reactive({county_profile(fips,c(1985:2014), vars=c("naturalincrease", "netmigration"))})
 
@@ -19,7 +19,7 @@ county_components = function(input, output, session, fips=0){
       add_trace(x=year,y=as.numeric(netmigration), type= "line", line=list(color = "rgb(92,102,112)", width=2.5, dash="dot"), name="Net Migration")%>%
       layout(
         barmode="stacked",
-        title=paste("Births, Deaths, and Net Migration 1985 to", as.character(max(data()$year))),
+        title=paste(name, " Births, Deaths, and Net Migration 1985 to", as.character(max(data()$year))),
         xaxis=list(
           title="Year"),
         yaxis=list(
