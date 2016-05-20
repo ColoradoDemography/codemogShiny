@@ -2,6 +2,7 @@
 
 export(county_components)
 export(county_componentsUI)
+export(geoEncode)
 export(geoInput)
 importFrom(codemogAPI,county_profile)
 importFrom(plotly,plotlyOutput)
