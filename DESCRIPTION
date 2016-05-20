@@ -8,5 +8,6 @@ Description: Contains commonly used functions to abstract some of the code we us
 License: What license is it under?
 Imports:
     shiny
+    codemogAPI
 LazyData: TRUE
 RoxygenNote: 5.0.1
